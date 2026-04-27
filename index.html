@@ -3,279 +3,447 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CinkHaus | Elektro, smart home a rekonstrukce</title>
+    <title>VOLTA — Elektro, smart home, rekonstrukce</title>
     <meta
       name="description"
-      content="CinkHaus řeší elektroinstalace, chytré domácnosti, rekonstrukce, vodu, topení, odpady, kamery a datové sítě v jižních Čechách, Rakousku a Německu."
+      content="VOLTA. Malý technický tým pro elektroinstalace, chytré domácnosti a rekonstrukce. Jižní Čechy, Rakousko, Německo."
     />
-    <meta name="theme-color" content="#111714" />
+    <meta name="theme-color" content="#0a0a0b" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/styles.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "HomeAndConstructionBusiness",
-        "name": "CinkHaus",
-        "description": "Elektroinstalace, chytré domácnosti, rekonstrukce interiérů, voda, topení, odpady, kamery a datové sítě.",
-        "areaServed": [
-          "Jihočeský kraj",
-          "České Budějovice",
-          "Český Krumlov",
-          "Rakousko",
-          "Německo"
-        ],
-        "email": "hello@cinkhaus.cz",
+        "name": "VOLTA",
+        "areaServed": ["Jihočeský kraj", "České Budějovice", "Český Krumlov", "Rakousko", "Německo"],
+        "email": "ahoj@volta.eu",
         "telephone": "+420 777 000 000"
       }
     </script>
   </head>
   <body>
-    <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="CinkHaus domů">
-        <span class="brand-mark" aria-hidden="true">CH</span>
-        <span class="brand-copy">
-          <strong>CinkHaus</strong>
-          <span>Elektro · Stavby · Smart</span>
-        </span>
+    <header class="nav" data-nav>
+      <a class="brand" href="#top" aria-label="VOLTA">
+        <span class="brand-dot" aria-hidden="true"></span>
+        VOLTA
       </a>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" data-menu-toggle>
-        <span class="menu-lines" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-        Menu
-      </button>
-
-      <nav class="main-nav" id="main-nav" data-nav>
-        <a href="#sluzby">Služby</a>
+      <nav class="nav-links" data-nav-links>
         <a href="#prace">Práce</a>
+        <a href="#realizace">Realizace</a>
         <a href="#region">Region</a>
         <a href="#kontakt">Kontakt</a>
-        <a class="nav-cta" href="#kontakt">Poptat projekt</a>
       </nav>
+
+      <a class="nav-cta" href="#kontakt">Poptat<span aria-hidden="true">→</span></a>
+
+      <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" data-nav-toggle aria-label="Menu">
+        <span></span><span></span>
+      </button>
     </header>
 
     <main id="top">
       <section class="hero">
-        <div class="hero-scene" aria-hidden="true">
-          <div class="trace trace-a"></div>
-          <div class="trace trace-b"></div>
-          <div class="trace trace-c"></div>
-          <div class="trace trace-d"></div>
-          <div class="room room-kitchen">
-            <span>KUCHYNĚ</span>
-            <i></i>
-          </div>
-          <div class="room room-tech">
-            <span>TECH</span>
-            <i></i>
-          </div>
-          <div class="room room-bath">
-            <span>VODA</span>
-            <i></i>
-          </div>
-          <div class="room room-gate">
-            <span>GATE</span>
-            <i></i>
-          </div>
-          <div class="pulse pulse-one"></div>
-          <div class="pulse pulse-two"></div>
-        </div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <svg class="hero-bolt" viewBox="0 0 600 800" aria-hidden="true">
+          <path d="M380 0 L240 360 L360 360 L180 800" fill="none" stroke="currentColor" stroke-width="1.2" />
+        </svg>
 
-        <div class="hero-content">
-          <p class="eyebrow">Jižní Čechy / Austria / Germany</p>
-          <h1>Elektro, smart home a rekonstrukce pod jednou střechou.</h1>
-          <p class="hero-lede">
-            Malý sehraný tým pro domy, kde musí sedět kabely, voda, topení,
-            světlo, internet i finální povrchy. Prakticky, čistě, bez divadla.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#kontakt">Probrat zakázku</a>
-            <a class="button ghost" href="#sluzby">Co umíme</a>
-          </div>
-        </div>
-
-        <div class="hero-dock" aria-label="Rychlé informace">
-          <div>
-            <span>01</span>
-            <strong>Elektro jako páteř</strong>
-            <p>rozvaděče, okruhy, světla, revize</p>
-          </div>
-          <div>
-            <span>02</span>
-            <strong>Smart home bez cirkusu</strong>
-            <p>scény, senzory, topení, vzdálený přístup</p>
-          </div>
-          <div>
-            <span>03</span>
-            <strong>Stavba navazuje</strong>
-            <p>voda, odpady, omítky, štuky, malby</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="intro-strip" aria-label="Zaměření firmy">
-        <p>
-          CinkHaus je malý technický tým: 5-10 lidí, normální domluva,
-          ostrý detail a zakázky od Budějc přes Krumlov až za hranice.
+        <p class="kicker">Jih. Čechy · Österreich · Bayern</p>
+        <h1 class="hero-title">
+          Provedeme vás stavbou.<br />
+          <em>Od&nbsp;začátku do&nbsp;konce.</em>
+        </h1>
+        <p class="hero-sub">
+          Deštník nad rozpočtem, GPS každým rozhodnutím.
         </p>
-      </section>
-
-      <section class="section services" id="sluzby">
-        <div class="section-head">
-          <p class="eyebrow">Služby</p>
-          <h2>Jedna parta pro věci, které spolu v domě opravdu souvisí.</h2>
+        <p class="hero-lede">
+          Pokryjeme všechny profese pod jednou střechou, cenu řekneme předem
+          a&nbsp;poradíme i&nbsp;tam, kde si jiné firmy navzájem protiřečí.
+          Žádné výmluvy, žádné „doplníme později“.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#kontakt">Probrat zakázku <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#proc">Proč my</a>
         </div>
 
-        <div class="service-list">
-          <article>
-            <span>01</span>
+        <div class="hero-foot">
+          <div><span>6+</span><p>profesí od kabelu po&nbsp;malbu</p></div>
+          <div><span>1</span><p>cena domluvená dopředu</p></div>
+          <div><span>0</span><p>výmluv, telefon zvedáme</p></div>
+        </div>
+      </section>
+
+      <section class="capabilities" id="prace">
+        <header class="block-head">
+          <p class="kicker">Co řešíme</p>
+          <h2>Čtyři profese, které musí v domě sednout do sebe.</h2>
+        </header>
+
+        <ul class="cap-grid">
+          <li>
+            <div class="cap-icon" aria-hidden="true">
+              <svg viewBox="0 0 56 56" width="56" height="56" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="miter" stroke-linecap="square">
+                <path d="M30 6 L14 30 L26 30 L20 50 L42 24 L30 24 L36 6 Z" />
+              </svg>
+            </div>
             <h3>Elektroinstalace</h3>
-            <p>Nové rozvody, rekonstrukce staré elektřiny, rozvaděče, zásuvky, světelné okruhy a příprava revize.</p>
-          </article>
-          <article>
-            <span>02</span>
+            <p>Rozvody, rozvaděč, světlo, revize.</p>
+          </li>
+          <li>
+            <div class="cap-icon" aria-hidden="true">
+              <svg viewBox="0 0 56 56" width="56" height="56" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="miter" stroke-linecap="round">
+                <path d="M8 28 L28 10 L48 28 V48 H8 Z" />
+                <circle cx="28" cy="36" r="2" fill="currentColor" stroke="none" />
+                <path d="M22 33 a8 8 0 0 1 12 0" />
+                <path d="M18 30 a14 14 0 0 1 20 0" />
+              </svg>
+            </div>
             <h3>Smart home</h3>
-            <p>Osvětlení, topení, žaluzie, senzory, scény a automatizace, která je pochopitelná i po půl roce používání.</p>
+            <p>Scény, senzory, topení, vzdálený přístup.</p>
+          </li>
+          <li>
+            <div class="cap-icon" aria-hidden="true">
+              <svg viewBox="0 0 56 56" width="56" height="56" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
+                <path d="M22 8 C16 18 13 24 13 30 a11 11 0 0 0 22 0 c0 -6 -3 -12 -13 -22 Z" />
+                <path d="M40 22 C42 26 44 28 44 32 a4 4 0 0 1 -8 0 c0 -2 1 -4 4 -8 Z" />
+              </svg>
+            </div>
+            <h3>Voda &amp; topení</h3>
+            <p>Koupelny, podlahy, technické místnosti.</p>
+          </li>
+          <li>
+            <div class="cap-icon" aria-hidden="true">
+              <svg viewBox="0 0 56 56" width="56" height="56" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="miter" stroke-linecap="round">
+                <path d="M16 18 a14 14 0 0 1 24 0" />
+                <path d="M20 22 a10 10 0 0 1 16 0" />
+                <path d="M24 26 a6 6 0 0 1 8 0" />
+                <rect x="12" y="32" width="22" height="14" />
+                <circle cx="23" cy="39" r="3.5" />
+                <path d="M34 36 L46 30 V48 L34 42 Z" stroke-linejoin="miter" />
+              </svg>
+            </div>
+            <h3>Sítě a kamery</h3>
+            <p>Rack, Wi-Fi, PoE, video, zabezpečení.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="reasons" id="proc">
+        <header class="block-head">
+          <p class="kicker">Proč my</p>
+          <h2>Tři věci, co tu jinde nedostanete.</h2>
+        </header>
+
+        <ol class="reasons-grid">
+          <li>
+            <div class="reasons-icon" aria-hidden="true">
+              <svg viewBox="0 0 56 56" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+                <path d="M6 28 a22 22 0 0 1 44 0 Z" />
+                <path d="M28 28 V46 a4 4 0 0 1 -8 0" />
+              </svg>
+            </div>
+            <h3>Pokryjeme to&nbsp;celé</h3>
+            <p>Od silnoproudu po&nbsp;malby — jeden tým, jedna domluva, jeden kontakt po&nbsp;celou stavbu.</p>
+          </li>
+          <li>
+            <div class="reasons-icon" aria-hidden="true">
+              <svg viewBox="0 0 56 56" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="miter" stroke-linecap="square">
+                <path d="M28 6 L50 6 L50 28 L26 50 L6 30 Z" />
+                <circle cx="40" cy="16" r="3" />
+                <path d="M16 30 L22 36 L34 24" stroke-linejoin="miter" />
+              </svg>
+            </div>
+            <h3>Cena řečená předem</h3>
+            <p>Cenu napíšeme dopředu. Změny řešíme dřív, než vzniknou — ne v&nbsp;závěrečné faktuře.</p>
+          </li>
+          <li>
+            <div class="reasons-icon" aria-hidden="true">
+              <svg viewBox="0 0 56 56" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="miter">
+                <circle cx="28" cy="28" r="22" />
+                <path d="M28 14 L34 28 L28 42 L22 28 Z" fill="currentColor" stroke="none" />
+                <circle cx="28" cy="28" r="2" fill="var(--paper)" stroke="none" />
+              </svg>
+            </div>
+            <h3>Poradíme i&nbsp;tam, kde si jiní protiřečí</h3>
+            <p>Dva odborníci, tři pravdy. Vysvětlíme rozdíly a&nbsp;poradíme, jak na&nbsp;to — i&nbsp;když si nás nakonec nenajmete.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="scenes" id="smart">
+        <header class="scenes-head">
+          <p class="kicker">Smart home, jak se opravdu používá</p>
+          <h2>Stačí říct, co chcete.<br /><em>Dům si zařídí zbytek.</em></h2>
+          <p>Místo deseti vypínačů jedna věta nebo jeden ťuk v aplikaci. Pár scén, které u&nbsp;nás v&nbsp;domech jedou denně:</p>
+        </header>
+
+        <ol class="scenes-grid">
+          <li>
+            <div class="scene-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7">
+                <rect x="3" y="6" width="26" height="20" rx="1.5" />
+                <path d="M14 12 L21 16 L14 20 Z" fill="currentColor" stroke="none" />
+              </svg>
+            </div>
+            <blockquote>„Kino.“</blockquote>
+            <p>Světla se ztlumí, projektor naběhne, žaluzie sjedou dolů.</p>
+          </li>
+          <li>
+            <div class="scene-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="square">
+                <path d="M9 4 V12 a2 2 0 0 0 4 0 V4" />
+                <path d="M11 4 V28" />
+                <path d="M22 4 C19 4 18 7 18 11 C18 14 20 15 22 15 V28" />
+              </svg>
+            </div>
+            <blockquote>„Večeře s&nbsp;rodinou.“</blockquote>
+            <p>Teplý svit nad stolem, hudba do pozadí, zbytek domu se utlumí.</p>
+          </li>
+          <li>
+            <div class="scene-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round">
+                <circle cx="16" cy="8" r="3" />
+                <path d="M10 22 Q13 16 16 16 Q19 16 22 22" />
+                <path d="M5 25 Q10 21 16 23 Q22 21 27 25" />
+              </svg>
+            </div>
+            <blockquote>„Jóga.“</blockquote>
+            <p>Měkké světlo, podlahovka v&nbsp;ranní teplotě, dům se ztiší.</p>
+          </li>
+          <li>
+            <div class="scene-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7">
+                <rect x="4" y="6" width="24" height="22" />
+                <path d="M4 13 H28" />
+                <circle cx="9" cy="9.5" r="0.9" fill="currentColor" stroke="none" />
+                <circle cx="14" cy="9.5" r="0.9" fill="currentColor" stroke="none" />
+                <path d="M19 9 H25" />
+                <rect x="9" y="17" width="14" height="9" />
+              </svg>
+            </div>
+            <blockquote>„Předehřej troubu.“</blockquote>
+            <p>Trouba naběhne, kuchyň se rozsvítí, časovač je v&nbsp;telefonu.</p>
+          </li>
+          <li>
+            <div class="scene-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+                <path d="M8 11 Q11 8 8 5 M16 11 Q19 8 16 5 M24 11 Q27 8 24 5" />
+                <path d="M8 21 Q11 18 8 15 M16 21 Q19 18 16 15 M24 21 Q27 18 24 15" />
+                <path d="M8 29 Q11 26 8 23 M16 29 Q19 26 16 23 M24 29 Q27 26 24 23" />
+              </svg>
+            </div>
+            <blockquote>„Sauna.“</blockquote>
+            <p>Sauna nahoru na 90 °C, sprcha se předehřeje, ručníky teplé.</p>
+          </li>
+          <li>
+            <div class="scene-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7">
+                <circle cx="10" cy="16" r="5" />
+                <circle cx="10" cy="16" r="1.5" fill="currentColor" stroke="none" />
+                <path d="M15 16 H29 M24 16 V20 M28 16 V21" />
+              </svg>
+            </div>
+            <blockquote>„Odjíždíme.“</blockquote>
+            <p>Vše zhasne, kamery na stráž, topení do úsporu, brána se zamkne.</p>
+          </li>
+        </ol>
+
+        <div class="scenes-gallery" aria-label="Ukázky instalací">
+          <figure>
+            <div class="photo photo--smart" style="background-image: url(./images/smart-hue-living.jpg)"></div>
+            <figcaption>Stmívaný obývák — scéna na&nbsp;jeden ťuk</figcaption>
+          </figure>
+          <figure>
+            <div class="photo photo--smart" style="background-image: url(./images/smart-knx-switch.jpg)"></div>
+            <figcaption>Smart vypínač — scéna na&nbsp;jediný gesture</figcaption>
+          </figure>
+          <figure>
+            <div class="photo photo--smart" style="background-image: url(./images/smart-app.jpg)"></div>
+            <figcaption>Vše v&nbsp;jedné aplikaci, i&nbsp;zpoza hranic</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="work" id="realizace">
+        <header class="block-head">
+          <p class="kicker">Realizace</p>
+          <h2>Domy, kde technika zmizela do detailu.</h2>
+        </header>
+
+        <div class="work-grid">
+          <article class="work-card work-card--hero">
+            <div class="photo" style="background-image: url(./images/dum-cb.jpg)"></div>
+            <div class="work-meta">
+              <span>Novostavba · Č. Budějovice</span>
+              <h3>Rodinný dům, jižní svah</h3>
+            </div>
           </article>
-          <article>
-            <span>03</span>
-            <h3>Kamery, síť, internet</h3>
-            <p>Datové zásuvky, Wi-Fi pokrytí, racky, kamerové body, zabezpečení a kabeláž vedená s rozumem.</p>
+          <article class="work-card">
+            <div class="photo" style="background-image: url(./images/kuchyn-scena.jpg)"></div>
+            <div class="work-meta">
+              <span>Rekonstrukce · Krumlov</span>
+              <h3>Kuchyň se scénami</h3>
+            </div>
           </article>
-          <article>
-            <span>04</span>
-            <h3>Voda, topení, odpady</h3>
-            <p>Koupelny, technické místnosti, radiátory, podlahové topení, přívody vody a kanalizace.</p>
+          <article class="work-card">
+            <div class="photo" style="background-image: url(./images/penzion-linec.jpg)"></div>
+            <div class="work-meta">
+              <span>Smart · AT</span>
+              <h3>Penzion u Lince</h3>
+            </div>
           </article>
-          <article>
-            <span>05</span>
-            <h3>Interiérové práce</h3>
-            <p>Omítky, štuky, sádrokarton, malby, zapravení tras a finální povrchy po technických profesích.</p>
-          </article>
-          <article>
-            <span>06</span>
-            <h3>Světelný detail</h3>
-            <p>Interiérové i venkovní osvětlení, LED linky, fasáda, schodiště, stmívání a večerní scény.</p>
+          <article class="work-card">
+            <div class="photo" style="background-image: url(./images/koupelna-de.jpg)"></div>
+            <div class="work-meta">
+              <span>Rekonstrukce · DE</span>
+              <h3>Koupelna a technika</h3>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="section work" id="prace">
-        <div class="work-copy">
-          <p class="eyebrow">Jak pracujeme</p>
-          <h2>Nejdřív technika, potom hezký povrch. V tomhle pořadí.</h2>
+      <section class="trust">
+        <header class="block-head">
+          <p class="kicker">Co dostanete</p>
+          <h2>Po předání nezůstanete v&nbsp;tom sami.</h2>
+        </header>
+
+        <ul class="trust-grid">
+          <li>
+            <div class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="6" y="5" width="20" height="22" />
+                <path d="M10 11 H17 M21 11 H22 M10 15 H14 M18 15 H22 M10 19 H22 M10 23 H18" />
+                <circle cx="17" cy="11" r="1.4" fill="currentColor" stroke="none" />
+                <circle cx="14" cy="15" r="1.4" fill="currentColor" stroke="none" />
+              </svg>
+            </div>
+            <h3>Plánek rozvodů</h3>
+            <p>Schéma elektřiny, vody a&nbsp;topení — abyste věděli, co je za&nbsp;stěnou.</p>
+          </li>
+          <li>
+            <div class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="5" y="5" width="22" height="22" />
+                <path d="M9 10 H23 M9 14 H23 M9 18 H23 M9 22 H23" />
+                <rect x="11" y="8" width="3" height="4" fill="currentColor" stroke="none" />
+                <rect x="18" y="12" width="3" height="4" fill="currentColor" stroke="none" />
+                <rect x="13" y="16" width="3" height="4" fill="currentColor" stroke="none" />
+                <rect x="20" y="20" width="3" height="4" fill="currentColor" stroke="none" />
+              </svg>
+            </div>
+            <h3>Popsaný rozvaděč</h3>
+            <p>Štítky u&nbsp;každého jističe. Žádné hádání, který okruh zhasnout.</p>
+          </li>
+          <li>
+            <div class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="miter" stroke-linecap="square">
+                <rect x="7" y="4" width="18" height="24" />
+                <path d="M11 11 H21 M11 15 H21 M11 19 L14 22 L21 14" />
+              </svg>
+            </div>
+            <h3>Revizní zpráva</h3>
+            <p>V&nbsp;ruce, ne ve&nbsp;slibu. Hotová k&nbsp;předání kolaudaci nebo pojišťovně.</p>
+          </li>
+          <li>
+            <div class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="9" y="3" width="14" height="26" rx="2" />
+                <circle cx="16" cy="25" r="0.9" fill="currentColor" stroke="none" />
+                <path d="M12 9 H20 M12 13 H17 M12 17 H20 M12 21 H15" />
+              </svg>
+            </div>
+            <h3>Zaučení s&nbsp;aplikací</h3>
+            <p>Projdeme s&nbsp;vámi scény, ovládání, scénáře. Klidně i&nbsp;po&nbsp;druhé.</p>
+          </li>
+          <li>
+            <div class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+                <path d="M6 9 Q6 6 9 6 L23 6 Q26 6 26 9 L26 18 Q26 21 23 21 L14 21 L9 26 L9 21 Q6 21 6 18 Z" />
+                <path d="M11 13 H21 M11 16 H17" />
+              </svg>
+            </div>
+            <h3>Servisní kontakt</h3>
+            <p>Jedno telefonní číslo. Ne formulář, ne ticket systém.</p>
+          </li>
+          <li>
+            <div class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="square">
+                <path d="M16 4 L26 8 L26 16 Q26 23 16 28 Q6 23 6 16 L6 8 Z" />
+                <path d="M11 16 L15 20 L21 12" />
+              </svg>
+            </div>
+            <h3>Záruka písemně</h3>
+            <p>Co domluvíme, je v&nbsp;e‑mailu. Stejně tak co garantujeme.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="duo" id="region">
+        <div class="duo-region">
+          <p class="kicker">Region</p>
+          <h2>Od&nbsp;Vltavy<br />k&nbsp;Dunaji.</h2>
+          <ul class="duo-cities">
+            <li><span>CB</span>České Budějovice</li>
+            <li><span>CK</span>Český Krumlov</li>
+            <li><span>AT</span>Linz · Mühlviertel</li>
+            <li><span>DE</span>Bayern · Niederbayern</li>
+          </ul>
+          <p class="duo-note"><em>Sprechen Sie Deutsch?</em> Klar — komunikujeme s rakouskými i bavorskými klienty napřímo.</p>
+        </div>
+        <div class="duo-team" id="tym">
+          <p class="kicker">Tým</p>
+          <h2>5–10 lidí.<br />Žádné agentury.</h2>
           <p>
-            U rekonstrukce se drahé chyby dějí tam, kde elektro, voda, topení
-            a povrchy řeší každý zvlášť. Proto se rozsah skládá dohromady hned na začátku.
+            Stálé jádro plus prověření parťáci na špičky.
+            Vedoucí realizace, elektrikáři, smart home technik,
+            instalatér, zedník. Jeden kontakt po celou stavbu.
           </p>
         </div>
-
-        <div class="work-board" aria-label="Proces realizace">
-          <article>
-            <span>Scope</span>
-            <strong>Obhlídka a priority</strong>
-            <p>Co se bourá, co zůstává, co musí fungovat hned a co počká na další etapu.</p>
-          </article>
-          <article>
-            <span>Plan</span>
-            <strong>Trasy a technologie</strong>
-            <p>Kabely, rozvaděč, voda, topení, data, kamery a světla do jednoho plánu.</p>
-          </article>
-          <article>
-            <span>Build</span>
-            <strong>Realizace bez chaosu</strong>
-            <p>Koordinace profesí tak, aby se nepřekáželo a hotové věci se neničily.</p>
-          </article>
-          <article>
-            <span>Hand</span>
-            <strong>Předání a servis</strong>
-            <p>Kontrola funkcí, dokumentace, zaučení a jasný kontakt pro další úpravy.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="region" id="region">
-        <div class="region-map" aria-hidden="true">
-          <span class="map-pin pin-cb">CB</span>
-          <span class="map-pin pin-ck">CK</span>
-          <span class="map-pin pin-at">AT</span>
-          <span class="map-pin pin-de">DE</span>
-        </div>
-        <div class="region-copy">
-          <p class="eyebrow">Region</p>
-          <h2>České Budějovice, Český Krumlov, Rakousko, Německo.</h2>
-          <p>
-            Základna v jižních Čechách, dosah podle velikosti zakázky. Dává smysl
-            pro domy kolem Budějc, Krumlova, Kaplice, Třeboně, směrem na Linec i Bavorsko.
-          </p>
-          <div class="region-tags">
-            <span>České Budějovice</span>
-            <span>Český Krumlov</span>
-            <span>Kaplice</span>
-            <span>Třeboň</span>
-            <span>Linz</span>
-            <span>Bayern</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section proof">
-        <article>
-          <span>Proč to dává smysl</span>
-          <strong>Smart home není krabička navíc. Je to návrh domu.</strong>
-        </article>
-        <article>
-          <span>Co hlídáme</span>
-          <strong>Servisní přístup, popsané rozvody, čisté předání.</strong>
-        </article>
-        <article>
-          <span>Pro koho</span>
-          <strong>Majitelé domů, menší developeři, rekonstrukce po etapách.</strong>
-        </article>
       </section>
 
       <section class="contact" id="kontakt">
         <div class="contact-copy">
-          <p class="eyebrow">Kontakt</p>
-          <h2>Pošli lokalitu, pár fotek a co chceš vyřešit jako první.</h2>
-          <p>
-            Stačí stručný popis domu, fáze projektu a největší bolest. U rekonstrukcí
-            pomůžou fotky současného stavu a představa termínu.
+          <p class="kicker">Kontakt</p>
+          <h2>Pošlete pár fotek<br />a co řešit jako první.</h2>
+          <p class="contact-lede">
+            Stačí krátce: kde je dům, ve které fázi je stavba a co bolí nejvíc.
           </p>
           <div class="contact-lines">
-            <a href="mailto:hello@cinkhaus.cz">hello@cinkhaus.cz</a>
+            <a href="mailto:ahoj@volta.eu">ahoj@volta.eu</a>
             <a href="tel:+420777000000">+420 777 000 000</a>
           </div>
         </div>
 
         <form class="contact-form" data-contact-form>
           <label>
-            Jméno
+            <span>Jméno</span>
             <input name="name" autocomplete="name" required />
           </label>
           <label>
-            E-mail nebo telefon
+            <span>E-mail nebo telefon</span>
             <input name="contact" autocomplete="email" required />
           </label>
           <label>
-            Lokalita
-            <input name="location" placeholder="České Budějovice, Linz, Bayern..." />
+            <span>Krátce popište projekt</span>
+            <textarea name="message" rows="3" placeholder="Lokalita, fáze stavby, co řešit jako první..."></textarea>
           </label>
-          <label>
-            Stručně popiš projekt
-            <textarea name="message" rows="5" placeholder="Elektro, chytrý dům, voda, topení, rekonstrukce..."></textarea>
-          </label>
-          <button class="button primary" type="submit">Připravit e-mail</button>
+          <button class="btn btn-primary" type="submit">Připravit e-mail <span aria-hidden="true">→</span></button>
           <p class="form-note" data-form-note aria-live="polite"></p>
         </form>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <span>CinkHaus</span>
-      <span>Elektro · Stavby · Smart home</span>
+    <footer class="footer">
+      <span class="footer-brand">VOLTA</span>
+      <span>Elektro · Smart · Stavba</span>
       <span>© <span data-year></span></span>
     </footer>
 

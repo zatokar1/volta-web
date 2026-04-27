@@ -1,6 +1,6 @@
-const header = document.querySelector("[data-header]");
-const menuToggle = document.querySelector("[data-menu-toggle]");
 const nav = document.querySelector("[data-nav]");
+const navToggle = document.querySelector("[data-nav-toggle]");
+const navLinks = document.querySelector("[data-nav-links]");
 const year = document.querySelector("[data-year]");
 const form = document.querySelector("[data-contact-form]");
 const formNote = document.querySelector("[data-form-note]");
@@ -8,17 +8,17 @@ const formNote = document.querySelector("[data-form-note]");
 year.textContent = new Date().getFullYear();
 
 const closeMenu = () => {
-  menuToggle.setAttribute("aria-expanded", "false");
+  navToggle.setAttribute("aria-expanded", "false");
   nav.classList.remove("is-open");
 };
 
-menuToggle.addEventListener("click", () => {
-  const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
-  menuToggle.setAttribute("aria-expanded", String(!isOpen));
-  nav.classList.toggle("is-open", !isOpen);
+navToggle.addEventListener("click", () => {
+  const open = navToggle.getAttribute("aria-expanded") === "true";
+  navToggle.setAttribute("aria-expanded", String(!open));
+  nav.classList.toggle("is-open", !open);
 });
 
-nav.addEventListener("click", (event) => {
+navLinks.addEventListener("click", (event) => {
   if (event.target instanceof HTMLAnchorElement) {
     closeMenu();
   }
@@ -27,7 +27,7 @@ nav.addEventListener("click", (event) => {
 window.addEventListener(
   "scroll",
   () => {
-    header.classList.toggle("is-scrolled", window.scrollY > 8);
+    nav.classList.toggle("is-scrolled", window.scrollY > 8);
   },
   { passive: true },
 );
@@ -40,17 +40,15 @@ form.addEventListener("submit", (event) => {
   }
 
   const data = new FormData(form);
-  const subject = `Poptávka CinkHaus - ${data.get("location") || "nový projekt"}`;
+  const subject = `Poptávka VOLTA — ${data.get("name") || "nový projekt"}`;
   const body = [
     `Jméno: ${data.get("name")}`,
     `Kontakt: ${data.get("contact")}`,
-    `Lokalita: ${data.get("location") || "-"}`,
     "",
     "Popis:",
     data.get("message") || "-",
   ].join("\n");
 
-  const href = `mailto:hello@cinkhaus.cz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  window.location.href = href;
+  window.location.href = `mailto:ahoj@volta.eu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   formNote.textContent = "E-mail je připravený v poštovní aplikaci.";
 });

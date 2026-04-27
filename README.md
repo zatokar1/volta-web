@@ -1,30 +1,54 @@
-# CinkHaus Web
+# VOLTA — web
 
-First website scaffold for a South Bohemian building, electrical, renovation, and smart-home company.
+Single-page site for a small electrical / smart-home / renovation team
+working in South Bohemia, Austria, and Bavaria.
 
-## Run locally
+## Run
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build
+Build:
 
 ```bash
 npm run build
 ```
 
-## Photo slots
+## Stack
 
-The layout is ready for realistic project photos, but no generated images are currently wired into the page. Add final assets under `public/images/` and replace the CSS variables or media-slot backgrounds in `src/styles.css`.
+- Vanilla HTML / CSS / JS, built with Vite.
+- Google Fonts: Fraunces (display) + Inter (body).
+- Single page, no framework.
 
-## Working Brand
+## Brand
 
-Current working name: **CinkHaus**
+- Name: **VOLTA**
+- Mark: bold wordmark + small copper dot
+- Display type: Fraunces (italic on accents)
+- Body type: Inter
+- Palette:
+  - ink `#0a0a0b`
+  - paper `#f5f2ea`
+  - cream `#faf7f0`
+  - accent (copper) `#c8682a`
+  - accent hot `#e88a3d`
 
-Why it fits:
-- short and easy to remember
-- "cink" carries the ring/spark idea in Czech/Slovak
-- "Haus" makes the cross-border Austria/Germany direction feel intentional
-- broad enough for elektro, smart home, interiors, and renovations
+## Photos
+
+The page ships without photos — empty `.photo` slots render with a dark
+gradient and a small italicized fallback label, so the layout looks
+intentional even before any imagery is added.
+
+To wire a real project photo, drop a JPG/WebP into `public/images/` and
+inline it on the slot:
+
+```html
+<div
+  class="photo"
+  style="background-image: url(/images/dum-cb.webp); background-size: cover; background-position: center;"
+></div>
+```
+
+Ready-to-run AI prompts are in [`public/images/prompts.md`](public/images/prompts.md).

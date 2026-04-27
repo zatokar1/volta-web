@@ -360,19 +360,23 @@ ul {
 
 .block-head {
   display: grid;
-  gap: 12px;
-  grid-template-columns: 200px 1fr;
+  gap: 14px;
   margin: 0 auto 56px;
   max-width: 1280px;
   padding: 0 32px;
 }
 
+.block-head .kicker {
+  margin: 0;
+}
+
 .block-head h2 {
   font-family: var(--display);
-  font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+  font-size: clamp(1.9rem, 3.6vw, 3rem);
   font-weight: 500;
   letter-spacing: -0.02em;
-  line-height: 1.05;
+  line-height: 1.04;
+  margin: 0;
   max-width: 24ch;
 }
 
@@ -383,8 +387,9 @@ ul {
 }
 
 .cap-grid {
+  align-items: start;
   display: grid;
-  gap: 1px;
+  gap: 18px;
   grid-template-columns: repeat(4, 1fr);
   margin: 0 auto;
   max-width: 1280px;
@@ -392,25 +397,16 @@ ul {
 }
 
 .cap-grid li {
-  background: var(--paper);
-  border-top: 1px solid var(--line);
-  padding: 36px 28px 40px;
+  background: var(--cream);
+  border-radius: var(--radius);
+  padding: 32px 28px 28px;
   position: relative;
-  transition: background 220ms ease;
-}
-
-.cap-grid li:not(:last-child)::after {
-  background: var(--line);
-  content: "";
-  height: calc(100% - 36px);
-  position: absolute;
-  right: 0;
-  top: 18px;
-  width: 1px;
+  transition: background 220ms ease, transform 220ms ease;
 }
 
 .cap-grid li:hover {
-  background: var(--cream);
+  background: #f1ecde;
+  transform: translateY(-2px);
 }
 
 .cap-icon {
@@ -434,6 +430,80 @@ ul {
   font-size: 0.95rem;
 }
 
+.cap-more {
+  margin-top: 18px;
+}
+
+.cap-more summary {
+  align-items: center;
+  color: var(--accent);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 600;
+  gap: 8px;
+  letter-spacing: 0.14em;
+  list-style: none;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.cap-more summary::-webkit-details-marker,
+.cap-more summary::marker {
+  display: none;
+}
+
+.cap-more summary::after {
+  align-items: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  content: "+";
+  display: inline-flex;
+  font-size: 0.86rem;
+  height: 18px;
+  justify-content: center;
+  line-height: 1;
+  transition: transform 220ms ease;
+  width: 18px;
+}
+
+.cap-more[open] summary::after {
+  content: "–";
+}
+
+.cap-more ul {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+}
+
+.cap-more ul li {
+  background: none;
+  border-radius: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  padding: 0 0 0 16px;
+  position: relative;
+  transition: none;
+}
+
+.cap-more ul li::before {
+  background: var(--accent);
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0.7em;
+  width: 9px;
+}
+
+.cap-more ul li:hover {
+  background: none;
+  transform: none;
+}
+
 /* ----- reasons (proč my) ----- */
 
 .reasons {
@@ -444,19 +514,25 @@ ul {
 }
 
 .reasons-grid {
-  background: var(--line);
   display: grid;
-  gap: 1px;
+  gap: 18px;
   grid-template-columns: repeat(3, 1fr);
   list-style: none;
   margin: 0 auto;
-  padding: 1px 32px 0;
+  padding: 0 32px;
 }
 
 .reasons-grid li {
-  background: var(--paper);
-  padding: 36px 28px 40px;
+  background: var(--cream);
+  border-radius: var(--radius);
+  padding: 36px 30px 36px;
   position: relative;
+  transition: background 220ms ease, transform 220ms ease;
+}
+
+.reasons-grid li:hover {
+  background: #f1ecde;
+  transform: translateY(-2px);
 }
 
 .reasons-num {
@@ -530,21 +606,21 @@ ul {
 }
 
 .scenes-grid {
-  background: var(--line);
   display: grid;
-  gap: 1px;
+  gap: 14px;
   grid-template-columns: repeat(3, 1fr);
   list-style: none;
   margin: 0 auto;
-  padding: 1px 32px 0;
+  padding: 0 32px;
 }
 
 .scenes-grid li {
-  background: var(--paper);
+  background: var(--cream);
+  border-radius: var(--radius);
   display: grid;
-  gap: 12px;
-  padding: 32px 28px 32px;
-  transition: background 220ms ease;
+  gap: 10px;
+  padding: 28px 26px 30px;
+  transition: background 220ms ease, transform 220ms ease;
 }
 
 .scene-icon {
@@ -556,7 +632,8 @@ ul {
 }
 
 .scenes-grid li:hover {
-  background: var(--cream);
+  background: #f1ecde;
+  transform: translateY(-2px);
 }
 
 .scenes-grid blockquote {
@@ -708,25 +785,26 @@ ul {
 }
 
 .trust-grid {
-  background: var(--line);
   display: grid;
-  gap: 1px;
+  gap: 14px;
   grid-template-columns: repeat(3, 1fr);
   list-style: none;
   margin: 0 auto;
-  padding: 1px 32px 0;
+  padding: 0 32px;
 }
 
 .trust-grid li {
-  background: var(--paper);
+  background: var(--cream);
+  border-radius: var(--radius);
   display: grid;
   gap: 8px;
-  padding: 36px 28px 36px;
-  transition: background 220ms ease;
+  padding: 32px 28px 30px;
+  transition: background 220ms ease, transform 220ms ease;
 }
 
 .trust-grid li:hover {
-  background: var(--cream);
+  background: #f1ecde;
+  transform: translateY(-2px);
 }
 
 .trust-icon {
@@ -972,14 +1050,6 @@ ul {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .cap-grid li:nth-child(even):not(:last-child)::after {
-    display: none;
-  }
-
-  .cap-grid li:nth-child(-n+2) {
-    border-top: 1px solid var(--line);
-  }
-
   .reasons-grid,
   .scenes-grid {
     grid-template-columns: 1fr;
@@ -1098,14 +1168,6 @@ ul {
 @media (max-width: 560px) {
   .cap-grid {
     grid-template-columns: 1fr;
-  }
-
-  .cap-grid li:not(:last-child)::after {
-    display: none;
-  }
-
-  .cap-grid li {
-    border-top: 1px solid var(--line);
   }
 
   .trust-grid {

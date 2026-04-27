@@ -13,54 +13,58 @@ file with the same name.
 
 ---
 
-## `dum-cb.jpg` — Realizace · Rodinný dům
+## `dum-cb.jpg` — Realizace · Obývací zóna se scénami
 
-> Photorealistic exterior of a modern South Bohemian family house at golden
-> hour, single-story with extended flat roof, warm larch wood cladding, matte
-> black aluminium window frames, soft cream rendered walls, integrated linear
-> LED under the eaves, low rolling Bohemian hills behind, no people, no
-> signage, editorial architecture photography, 35mm, shallow DoF, 4k.
+> Photorealistic interior of a freshly renovated modern open-plan living
+> room, recessed ceiling LEDs, warm linear LED accent strip behind drapes,
+> floating media console, wall-mounted TV, cream walls, light wood floor,
+> soft armchairs, modern wooden floating staircase with glass railing
+> visible to one side, no people, post-renovation feel — clean, finished,
+> calm. Editorial 35mm, 4k.
 
-## `kuchyn-scena.jpg` — Realizace · Kuchyň
+## `rozvadec.jpg` — Realizace · Rozvaděč
 
-> Photorealistic contemporary kitchen at dusk, dimmed warm LED scene under
-> cabinets and over a stone island, matte black tap, oak veneer cabinetry,
-> cream walls, single dimmable pendant casting amber glow, no people, calm
-> and refined, editorial interior photography, 35mm, 4k.
-
-## `penzion-linec.jpg` — Realizace · Penzion u Lince
-
-> Photorealistic interior of a small alpine guesthouse reception in Upper
-> Austria, warm wood floor, white plastered walls, discreet ceiling-mounted
-> Wi-Fi access point, tidy server rack visible through a glass door in the
-> back office, soft daylight, calm professional mood, no people, 35mm, 4k.
-
-## `koupelna-de.jpg` — Realizace · Koupelna DE
-
-> Photorealistic modern bathroom in a renovated Bavarian family house,
-> large-format stone-look porcelain tiles, walnut vanity, matte black
-> fixtures, walk-in rain shower, warm linear LED behind the mirror, soft
-> daylight from a frosted window, no people, editorial, 35mm, 4k.
-
-## `smart-hue-living.jpg` — Smart home · Hue obývák
-
-> Photorealistic modern living room at dusk lit only by Philips-Hue–style
-> smart bulbs — warm amber tones from a floor lamp, gentle bias-light glow
-> behind a wall-mounted TV, dimmed pendant over a low oak coffee table, light
-> wood floor, cream walls, linen sofa, no people, cinematic mood, soft
-> contrast, editorial, 35mm, 4k.
-
-## `smart-knx-switch.jpg` — Smart home · KNX vypínač
-
-> Photorealistic close-up of a flush-mounted KNX-style wall switch on a
-> smooth cream-painted wall, brushed matte black faceplate with two
-> soft-touch tactile buttons, single discreet LED indicator, edge-lit at low
-> intensity, warm side light, slight shallow DoF, premium product
+> Photorealistic close-up of a clean modern residential electrical
+> distribution panel with a row of branded miniature circuit breakers (C6
+> type), neatly bundled color-coded wiring (red/yellow/blue/black phases),
+> labeled DIN rails, sharp daylight, no people, technical product
 > photography, 50mm, 4k.
 
-## `smart-app.jpg` — Smart home · Aplikace
+## `kamera.jpg` — Realizace · Kamerový systém
 
-> Photorealistic top-down hand holding a modern smartphone showing a clean
-> minimal home-control app with named scenes ("Kino", "Večeře", "Sauna"),
-> warm wooden table beneath, soft natural daylight, slight blur on
-> periphery, no visible brand logos, editorial product photography, 50mm, 4k.
+> Photorealistic close-up of a modern dome PoE security camera mounted on a
+> contemporary glass-and-cladding building eaves, soft daylight, blurred
+> tree foliage in background, no people, editorial architectural detail,
+> 35mm, shallow DoF, 4k.
+
+## `smart-termostat.jpg` — Realizace · Smart regulace
+
+> Photorealistic close-up of a modern wall-mounted digital thermostat (DEVI
+> or similar) on a smooth concrete-toned plastered wall, small LCD showing
+> temperature, soft natural side light, slight reflection on a glass door
+> nearby, no people, premium product photography, 50mm, 4k.
+
+---
+
+## `smart-ambient.jpg` — Smart home · Vrstvené světelné scény
+
+> Photorealistic interior corner of a modern living room at golden hour,
+> single copper-toned dome reading lamp glowing warmly over an upholstered
+> armchair, large window showing soft city bokeh outside at dusk, layered
+> ambient light from multiple soft sources, cinematic mood, no people,
+> editorial 35mm, shallow DoF, 4k.
+
+## `smart-sauna.jpg` — Smart home · Sauna scéna
+
+> Photorealistic interior of a modern home sauna, hexagonal wood paneling
+> on the walls, warm LED accent strip glowing under the bench, natural pine
+> tones, intimate atmosphere, no people, no steam clouds, editorial product
+> photography, 35mm, 4k.
+
+## `smart-panel.jpg` — Smart home · Wall control panel
+
+> Photorealistic close-up of a hand reaching toward a wall-mounted
+> touchscreen smart-home control panel, screen showing climate/heating
+> dashboard with temperature in Celsius, hexagonal-tile backsplash behind,
+> espresso machine slightly out of focus to one side, soft kitchen light,
+> 35mm, shallow DoF, 4k.

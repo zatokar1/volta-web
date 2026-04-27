@@ -520,25 +520,48 @@ ul {
     animation: compareSwap 7s infinite ease-in-out;
   }
 
-  .compare-card:nth-child(2) .compare-after,
-  .compare-card:nth-child(2) .compare-tag-before,
-  .compare-card:nth-child(2) .compare-tag-after { animation-delay: -1.2s; }
-
-  .compare-card:nth-child(3) .compare-after,
-  .compare-card:nth-child(3) .compare-tag-before,
-  .compare-card:nth-child(3) .compare-tag-after { animation-delay: -2.4s; }
-
-  .compare-card:nth-child(4) .compare-after,
-  .compare-card:nth-child(4) .compare-tag-before,
-  .compare-card:nth-child(4) .compare-tag-after { animation-delay: -3.6s; }
-
-  .compare-card:nth-child(5) .compare-after,
-  .compare-card:nth-child(5) .compare-tag-before,
-  .compare-card:nth-child(5) .compare-tag-after { animation-delay: -4.8s; }
-
-  .compare-card:nth-child(6) .compare-after,
-  .compare-card:nth-child(6) .compare-tag-before,
-  .compare-card:nth-child(6) .compare-tag-after { animation-delay: -6s; }
+  .compare-card:nth-child(2)  .compare-after,
+  .compare-card:nth-child(2)  .compare-tag-before,
+  .compare-card:nth-child(2)  .compare-tag-after  { animation-delay: -0.47s; }
+  .compare-card:nth-child(3)  .compare-after,
+  .compare-card:nth-child(3)  .compare-tag-before,
+  .compare-card:nth-child(3)  .compare-tag-after  { animation-delay: -0.94s; }
+  .compare-card:nth-child(4)  .compare-after,
+  .compare-card:nth-child(4)  .compare-tag-before,
+  .compare-card:nth-child(4)  .compare-tag-after  { animation-delay: -1.41s; }
+  .compare-card:nth-child(5)  .compare-after,
+  .compare-card:nth-child(5)  .compare-tag-before,
+  .compare-card:nth-child(5)  .compare-tag-after  { animation-delay: -1.88s; }
+  .compare-card:nth-child(6)  .compare-after,
+  .compare-card:nth-child(6)  .compare-tag-before,
+  .compare-card:nth-child(6)  .compare-tag-after  { animation-delay: -2.35s; }
+  .compare-card:nth-child(7)  .compare-after,
+  .compare-card:nth-child(7)  .compare-tag-before,
+  .compare-card:nth-child(7)  .compare-tag-after  { animation-delay: -2.82s; }
+  .compare-card:nth-child(8)  .compare-after,
+  .compare-card:nth-child(8)  .compare-tag-before,
+  .compare-card:nth-child(8)  .compare-tag-after  { animation-delay: -3.29s; }
+  .compare-card:nth-child(9)  .compare-after,
+  .compare-card:nth-child(9)  .compare-tag-before,
+  .compare-card:nth-child(9)  .compare-tag-after  { animation-delay: -3.76s; }
+  .compare-card:nth-child(10) .compare-after,
+  .compare-card:nth-child(10) .compare-tag-before,
+  .compare-card:nth-child(10) .compare-tag-after  { animation-delay: -4.23s; }
+  .compare-card:nth-child(11) .compare-after,
+  .compare-card:nth-child(11) .compare-tag-before,
+  .compare-card:nth-child(11) .compare-tag-after  { animation-delay: -4.7s; }
+  .compare-card:nth-child(12) .compare-after,
+  .compare-card:nth-child(12) .compare-tag-before,
+  .compare-card:nth-child(12) .compare-tag-after  { animation-delay: -5.17s; }
+  .compare-card:nth-child(13) .compare-after,
+  .compare-card:nth-child(13) .compare-tag-before,
+  .compare-card:nth-child(13) .compare-tag-after  { animation-delay: -5.64s; }
+  .compare-card:nth-child(14) .compare-after,
+  .compare-card:nth-child(14) .compare-tag-before,
+  .compare-card:nth-child(14) .compare-tag-after  { animation-delay: -6.11s; }
+  .compare-card:nth-child(15) .compare-after,
+  .compare-card:nth-child(15) .compare-tag-before,
+  .compare-card:nth-child(15) .compare-tag-after  { animation-delay: -6.58s; }
 
   .compare-hint {
     display: none;

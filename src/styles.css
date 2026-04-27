@@ -1363,7 +1363,6 @@ ul {
   .nav-links {
     background: var(--paper);
     box-shadow: 0 24px 60px rgba(10, 10, 11, 0.08);
-    counter-reset: menuItem;
     display: flex;
     flex-direction: column;
     gap: 2px;
@@ -1413,18 +1412,6 @@ ul {
   .nav-links a:nth-child(4) { --i: 4; }
   .nav-links a:nth-child(5) { --i: 5; }
 
-  .nav-links a::before {
-    color: var(--accent);
-    content: counter(menuItem, decimal-leading-zero);
-    counter-increment: menuItem;
-    font-family: var(--sans);
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.16em;
-    min-width: 1.6em;
-    opacity: 0.85;
-  }
-
   .nav-links a::after {
     color: var(--accent);
     content: "→";
@@ -1455,7 +1442,7 @@ ul {
   }
 
   .nav.is-open .nav-cta {
-    align-self: stretch;
+    align-items: center;
     background: var(--ink);
     color: var(--cream);
     display: flex;
@@ -1463,8 +1450,8 @@ ul {
     grid-column: 1 / -1;
     grid-row: 3;
     justify-content: space-between;
-    margin: 0;
-    padding: 18px 24px;
+    margin: 4px 24px 18px;
+    padding: 14px 18px;
   }
 
   .hero {

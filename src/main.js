@@ -40,7 +40,7 @@ form.addEventListener("submit", (event) => {
   }
 
   const data = new FormData(form);
-  const subject = `Poptávka CVENG - ${data.get("location") || "nový projekt"}`;
+  const subject = `Poptávka CinkHaus - ${data.get("location") || "nový projekt"}`;
   const body = [
     `Jméno: ${data.get("name")}`,
     `Kontakt: ${data.get("contact")}`,
@@ -50,7 +50,7 @@ form.addEventListener("submit", (event) => {
     data.get("message") || "-",
   ].join("\n");
 
-  const href = `mailto:hello@cveng.cz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const href = `mailto:hello@cinkhaus.cz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   window.location.href = href;
   formNote.textContent = "E-mail je připravený v poštovní aplikaci.";
 });

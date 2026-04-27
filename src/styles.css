@@ -380,6 +380,183 @@ ul {
   max-width: 24ch;
 }
 
+/* ----- compare (než / potom) ----- */
+
+.compare {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 96px 0 56px;
+}
+
+.compare-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.compare-card {
+  background: var(--cream);
+  border-radius: var(--radius);
+  display: grid;
+  gap: 14px;
+  padding: 14px 14px 22px;
+  transition: background 220ms ease;
+}
+
+.compare-card:hover {
+  background: #f1ecde;
+}
+
+.compare-frame {
+  aspect-ratio: 4 / 3;
+  background: var(--ink);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.compare-img {
+  background-color: var(--ink-2);
+  background-image: linear-gradient(135deg, var(--ink) 0%, var(--ink-2) 50%, #2a2a30 100%);
+  background-position: center;
+  background-size: cover;
+  inset: 0;
+  position: absolute;
+  transition: opacity 520ms ease;
+}
+
+.compare-img[data-fallback]::after {
+  bottom: 12px;
+  color: rgba(245, 242, 234, 0.42);
+  content: attr(data-fallback);
+  font-family: var(--display);
+  font-size: 0.74rem;
+  font-style: italic;
+  left: 14px;
+  letter-spacing: 0.04em;
+  position: absolute;
+  text-transform: lowercase;
+}
+
+.compare-after {
+  opacity: 0;
+}
+
+.compare-card:hover .compare-after,
+.compare-card:focus-within .compare-after {
+  opacity: 1;
+}
+
+.compare-tag {
+  background: rgba(10, 10, 11, 0.78);
+  color: var(--cream);
+  font-size: 0.7rem;
+  font-weight: 600;
+  left: 14px;
+  letter-spacing: 0.18em;
+  padding: 5px 10px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 14px;
+  transition: opacity 520ms ease;
+  z-index: 2;
+}
+
+.compare-tag-after {
+  background: var(--accent);
+  opacity: 0;
+}
+
+.compare-card:hover .compare-tag-before,
+.compare-card:focus-within .compare-tag-before {
+  opacity: 0;
+}
+
+.compare-card:hover .compare-tag-after,
+.compare-card:focus-within .compare-tag-after {
+  opacity: 1;
+}
+
+.compare-meta {
+  padding: 0 8px;
+}
+
+.compare-meta h3 {
+  font-family: var(--display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  margin-bottom: 4px;
+}
+
+.compare-meta p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+.compare-hint {
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-style: italic;
+  margin: 32px auto 0;
+  max-width: 1280px;
+  padding: 0 32px;
+  text-align: right;
+}
+
+@media (hover: none) {
+  .compare-card .compare-after {
+    animation: compareSwap 7s infinite ease-in-out;
+  }
+
+  .compare-card .compare-tag-before {
+    animation: compareSwapInverse 7s infinite ease-in-out;
+  }
+
+  .compare-card .compare-tag-after {
+    animation: compareSwap 7s infinite ease-in-out;
+  }
+
+  .compare-card:nth-child(2) .compare-after,
+  .compare-card:nth-child(2) .compare-tag-before,
+  .compare-card:nth-child(2) .compare-tag-after { animation-delay: -1.2s; }
+
+  .compare-card:nth-child(3) .compare-after,
+  .compare-card:nth-child(3) .compare-tag-before,
+  .compare-card:nth-child(3) .compare-tag-after { animation-delay: -2.4s; }
+
+  .compare-card:nth-child(4) .compare-after,
+  .compare-card:nth-child(4) .compare-tag-before,
+  .compare-card:nth-child(4) .compare-tag-after { animation-delay: -3.6s; }
+
+  .compare-card:nth-child(5) .compare-after,
+  .compare-card:nth-child(5) .compare-tag-before,
+  .compare-card:nth-child(5) .compare-tag-after { animation-delay: -4.8s; }
+
+  .compare-card:nth-child(6) .compare-after,
+  .compare-card:nth-child(6) .compare-tag-before,
+  .compare-card:nth-child(6) .compare-tag-after { animation-delay: -6s; }
+
+  .compare-hint {
+    display: none;
+  }
+}
+
+@keyframes compareSwap {
+  0%, 8% { opacity: 0; }
+  42%, 58% { opacity: 1; }
+  92%, 100% { opacity: 0; }
+}
+
+@keyframes compareSwapInverse {
+  0%, 8% { opacity: 1; }
+  42%, 58% { opacity: 0; }
+  92%, 100% { opacity: 1; }
+}
+
 /* ----- capabilities ----- */
 
 .capabilities {
@@ -1051,7 +1228,8 @@ ul {
     grid-template-columns: 1fr;
   }
 
-  .trust-grid {
+  .trust-grid,
+  .compare-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1166,7 +1344,8 @@ ul {
     grid-template-columns: 1fr;
   }
 
-  .trust-grid {
+  .trust-grid,
+  .compare-grid {
     grid-template-columns: 1fr;
   }
 

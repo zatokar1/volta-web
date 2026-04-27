@@ -390,8 +390,8 @@ ul {
 
 .compare-grid {
   display: grid;
-  gap: 18px;
-  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
   padding: 0 32px;
 }
@@ -410,7 +410,7 @@ ul {
 }
 
 .compare-frame {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   background: var(--ink);
   border-radius: 2px;
   overflow: hidden;
@@ -1003,6 +1003,80 @@ ul {
   margin: 0;
 }
 
+/* ----- brands marquee ----- */
+
+.brands {
+  background: var(--ink);
+  color: var(--cream);
+  margin: 96px 0 0;
+  overflow: hidden;
+  padding: 72px 0;
+}
+
+.brands-head {
+  margin: 0 auto 44px;
+  max-width: 1280px;
+  padding: 0 32px;
+}
+
+.brands-head .kicker {
+  color: var(--accent-hot);
+  margin-bottom: 14px;
+}
+
+.brands-head h2 {
+  color: var(--cream);
+  font-family: var(--display);
+  font-size: clamp(1.9rem, 3.6vw, 3rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.04;
+  margin: 0 0 18px;
+  max-width: 22ch;
+}
+
+.brands-head > p {
+  color: rgba(245, 242, 234, 0.65);
+  font-size: 1.05rem;
+  margin: 0;
+  max-width: 50ch;
+}
+
+.brands-track-wrap {
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 6%, black 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, black 6%, black 94%, transparent);
+  overflow: hidden;
+  position: relative;
+}
+
+.brands-track {
+  animation: brandsScroll 42s linear infinite;
+  display: flex;
+  gap: 64px;
+  padding-left: 32px;
+  width: max-content;
+}
+
+.brands-track span {
+  color: rgba(245, 242, 234, 0.86);
+  font-family: var(--display);
+  font-size: 1.45rem;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  white-space: nowrap;
+}
+
+@keyframes brandsScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brands-track {
+    animation: none;
+  }
+}
+
 /* ----- duo: region + team ----- */
 
 .duo {
@@ -1228,8 +1302,7 @@ ul {
     grid-template-columns: 1fr;
   }
 
-  .trust-grid,
-  .compare-grid {
+  .trust-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 

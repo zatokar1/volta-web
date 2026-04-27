@@ -453,22 +453,17 @@ ul {
   display: none;
 }
 
-.cap-more summary::after {
-  align-items: center;
-  border: 1px solid currentColor;
-  border-radius: 50%;
-  content: "+";
-  display: inline-flex;
-  font-size: 0.86rem;
-  height: 18px;
-  justify-content: center;
-  line-height: 1;
-  transition: transform 220ms ease;
-  width: 18px;
+.cap-toggle {
+  flex: 0 0 auto;
 }
 
-.cap-more[open] summary::after {
-  content: "–";
+.cap-toggle-v {
+  transform-origin: 10px 10px;
+  transition: transform 220ms ease;
+}
+
+.cap-more[open] .cap-toggle-v {
+  transform: rotate(90deg);
 }
 
 .cap-more ul {
@@ -491,12 +486,13 @@ ul {
 
 .cap-more ul li::before {
   background: var(--accent);
+  border-radius: 50%;
   content: "";
-  height: 1px;
+  height: 5px;
   left: 0;
   position: absolute;
-  top: 0.7em;
-  width: 9px;
+  top: 0.6em;
+  width: 5px;
 }
 
 .cap-more ul li:hover {

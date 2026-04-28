@@ -102,7 +102,7 @@ ul {
 .brand {
   align-items: center;
   display: inline-flex;
-  height: 64px;
+  height: 120px;
 }
 
 .brand-logo {
@@ -326,11 +326,10 @@ ul {
 
 .hero-thumbs {
   display: grid;
-  gap: 18px;
+  gap: 22px;
   grid-template-columns: repeat(4, 1fr);
   list-style: none;
   margin: 0 0 64px;
-  max-width: 720px;
   padding: 0;
   position: relative;
   z-index: 1;
@@ -349,7 +348,7 @@ ul {
 }
 
 .hero-thumb-img {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 3 / 2;
   background-color: var(--ink-2);
   background-image: linear-gradient(135deg, var(--ink) 0%, var(--ink-2) 50%, #2a2a30 100%);
   background-position: center;
@@ -1493,7 +1492,6 @@ ul {
     gap: 14px;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 48px;
-    max-width: none;
   }
 
   .hero-foot {

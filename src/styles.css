@@ -877,33 +877,7 @@ ul {
   font-size: 0.92rem;
 }
 
-/* ----- work / projects ----- */
-
-.work {
-  padding: 120px 0 64px;
-}
-
-.work-grid {
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr;
-  margin: 0 auto;
-  max-width: 1280px;
-  padding: 0 32px;
-}
-
-.work-card {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  position: relative;
-}
-
-.work-card--hero {
-  grid-column: span 2;
-  grid-row: span 2;
-}
+/* ----- shared .photo (smart gallery uses .photo--smart based on this) ----- */
 
 .photo {
   aspect-ratio: 4 / 3;
@@ -915,10 +889,6 @@ ul {
   overflow: hidden;
   position: relative;
   transition: transform 380ms cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.work-card--hero .photo {
-  aspect-ratio: 16 / 11;
 }
 
 .photo[data-fallback]::before {
@@ -941,34 +911,6 @@ ul {
   letter-spacing: 0.04em;
   position: absolute;
   text-transform: lowercase;
-}
-
-.work-card:hover .photo {
-  transform: translateY(-4px);
-}
-
-.work-meta {
-  display: grid;
-  gap: 4px;
-}
-
-.work-meta span {
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.work-meta h3 {
-  font-family: var(--display);
-  font-size: 1.32rem;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-}
-
-.work-card--hero .work-meta h3 {
-  font-size: 1.6rem;
 }
 
 /* ----- trust deliverables ----- */
@@ -1333,20 +1275,6 @@ ul {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .work-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-  }
-
-  .work-card--hero {
-    grid-column: span 2;
-    grid-row: auto;
-  }
-
-  .work-card--hero .photo {
-    aspect-ratio: 16 / 8;
-  }
-
   .contact {
     gap: 48px;
     grid-template-columns: 1fr;
@@ -1505,14 +1433,6 @@ ul {
   .trust-grid,
   .compare-grid {
     grid-template-columns: 1fr;
-  }
-
-  .work-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .work-card--hero {
-    grid-column: auto;
   }
 
   .hero-foot {

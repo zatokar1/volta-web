@@ -102,19 +102,14 @@ ul {
 .brand {
   align-items: center;
   display: inline-flex;
-  font-family: var(--display);
-  font-size: 1.18rem;
-  font-weight: 700;
-  gap: 10px;
-  letter-spacing: 0.04em;
+  height: 44px;
 }
 
-.brand-dot {
-  background: var(--accent);
-  border-radius: 50%;
-  display: inline-block;
-  height: 8px;
-  width: 8px;
+.brand-logo {
+  display: block;
+  height: 100%;
+  mix-blend-mode: multiply;
+  width: auto;
 }
 
 .nav-links {

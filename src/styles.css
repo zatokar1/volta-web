@@ -1300,6 +1300,19 @@ ul {
   text-transform: uppercase;
 }
 
+.types-icon {
+  align-items: center;
+  color: var(--accent);
+  display: flex;
+  height: 44px;
+  margin-bottom: 18px;
+}
+
+.types-icon svg {
+  height: 100%;
+  width: auto;
+}
+
 .types-grid h3 {
   font-family: var(--display);
   font-size: 1.28rem;
@@ -1376,13 +1389,14 @@ ul {
 
 .fit-no ul li::before {
   background: var(--muted);
+  border-radius: 50%;
   content: "";
-  height: 1.5px;
+  height: 6px;
   left: 0;
-  opacity: 0.6;
+  opacity: 0.55;
   position: absolute;
-  top: 0.78em;
-  width: 10px;
+  top: 0.62em;
+  width: 6px;
 }
 
 /* ----- faq ----- */

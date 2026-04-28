@@ -108,6 +108,7 @@ ul {
 .brand-logo {
   display: block;
   height: 100%;
+  mix-blend-mode: multiply;
   width: auto;
 }
 
@@ -574,19 +575,25 @@ ul {
 
   .compare-card:nth-child(2) .compare-after,
   .compare-card:nth-child(2) .compare-tag-before,
-  .compare-card:nth-child(2) .compare-tag-after { animation-delay: -1.17s; }
+  .compare-card:nth-child(2) .compare-tag-after { animation-delay: -0.875s; }
   .compare-card:nth-child(3) .compare-after,
   .compare-card:nth-child(3) .compare-tag-before,
-  .compare-card:nth-child(3) .compare-tag-after { animation-delay: -2.34s; }
+  .compare-card:nth-child(3) .compare-tag-after { animation-delay: -1.75s; }
   .compare-card:nth-child(4) .compare-after,
   .compare-card:nth-child(4) .compare-tag-before,
-  .compare-card:nth-child(4) .compare-tag-after { animation-delay: -3.5s; }
+  .compare-card:nth-child(4) .compare-tag-after { animation-delay: -2.625s; }
   .compare-card:nth-child(5) .compare-after,
   .compare-card:nth-child(5) .compare-tag-before,
-  .compare-card:nth-child(5) .compare-tag-after { animation-delay: -4.67s; }
+  .compare-card:nth-child(5) .compare-tag-after { animation-delay: -3.5s; }
   .compare-card:nth-child(6) .compare-after,
   .compare-card:nth-child(6) .compare-tag-before,
-  .compare-card:nth-child(6) .compare-tag-after { animation-delay: -5.83s; }
+  .compare-card:nth-child(6) .compare-tag-after { animation-delay: -4.375s; }
+  .compare-card:nth-child(7) .compare-after,
+  .compare-card:nth-child(7) .compare-tag-before,
+  .compare-card:nth-child(7) .compare-tag-after { animation-delay: -5.25s; }
+  .compare-card:nth-child(8) .compare-after,
+  .compare-card:nth-child(8) .compare-tag-before,
+  .compare-card:nth-child(8) .compare-tag-after { animation-delay: -6.125s; }
 
   .compare-hint {
     display: none;
